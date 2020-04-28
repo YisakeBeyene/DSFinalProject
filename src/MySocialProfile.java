@@ -1,7 +1,6 @@
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
-import java.util.Stack;
 
 public class MySocialProfile {
 
@@ -9,11 +8,12 @@ public class MySocialProfile {
     String email;
     String password;
     int classYear;
-    Events upcomingEvents;
+    ArrayPriorityQueue upcomingEvents;
     Deque<String> timelinePosts;
     ArrayList<String> friends;
 
-    public String name() {
+    //Getters for the profile properties
+    public String getName() {
         return name;
     }
 
@@ -29,7 +29,7 @@ public class MySocialProfile {
         return classYear;
     }
 
-    public Events getUpcomingEvents() {
+    public ArrayPriorityQueue getUpcomingEvents() {
         return upcomingEvents;
     }
 
@@ -41,19 +41,19 @@ public class MySocialProfile {
         return friends;
     }
 
-
-
+    //Constructure without upcoming event, timelineposts and friends
     public MySocialProfile(String name, String email, String password, int classYear){
         this.name = name;
         this.email = email;
         this.password = password;
         this.classYear = classYear;
         this.friends = new ArrayList<>(5);
-        this.upcomingEvents = new Events(20);
+        this.upcomingEvents = new ArrayPriorityQueue(20);
         this.timelinePosts = new ArrayDeque<>();
     }
 
-    public MySocialProfile(String name, String email, String password, int classYear, Events upcomingEvents, Deque<String> timelinePosts, ArrayList<String> friends){
+    //Constructure with everything
+    public MySocialProfile(String name, String email, String password, int classYear, ArrayPriorityQueue upcomingEvents, Deque<String> timelinePosts, ArrayList<String> friends){
         this.name = name;
         this.email = email;
         this.password = password;
