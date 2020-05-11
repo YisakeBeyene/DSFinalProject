@@ -1,0 +1,1 @@
+Open the entire folder in any text editor, the open and run the mainClass.java file.

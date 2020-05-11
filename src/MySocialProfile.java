@@ -2,8 +2,10 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 
+// Creates a social profile for each user.
 public class MySocialProfile {
 
+    // Declaring Instance Varibales in Java.
     String name;
     String email;
     String password;
@@ -41,7 +43,11 @@ public class MySocialProfile {
         return friends;
     }
 
-    //Constructure without upcoming event, timelineposts and friends
+    /* Constructur without upcoming event, timelineposts and friends
+     * Creates a user profile based on parameters given.
+     * @param name, email, password of type string
+     * @param classYear of type int.
+     */
     public MySocialProfile(String name, String email, String password, int classYear){
         this.name = name;
         this.email = email;
@@ -52,7 +58,14 @@ public class MySocialProfile {
         this.timelinePosts = new ArrayDeque<>();
     }
 
-    //Constructure with everything
+
+    /* Constructure with all attributes
+     * Creates a user profile based on parameters given.
+     * @param name, email, password of type string - classYear of type integer
+     * @param upcomingEvents of type ArrayPriorityQueue - timelinePosts of type Deque<String>
+     * @param friends of type ArrayList<String>
+     * @param classYear of type int.
+     */
     public MySocialProfile(String name, String email, String password, int classYear, ArrayPriorityQueue upcomingEvents, Deque<String> timelinePosts, ArrayList<String> friends){
         this.name = name;
         this.email = email;

@@ -1,7 +1,8 @@
-Leo Higdon
-lhigdon@conncoll.edu
-Camels2011
-2050
-2011/01/12 4:31 Unity House Wine and Cheese Reception, 2012/05/16 4:32 Unity House Wine and Cheese Reception, 2013/02/23 4:33 Unity House Wine and Cheese Reception, 2014/02/23 4:34 Unity House Wine and Cheese Reception, 2022/2/14 4:35 Great Beginnings Centennial Event in Blaustein
-One, Two, Three, Four, Five, Six, Seven
-abengoch@conncoll.edu, aross@conncoll.edu, tpamm@conncoll.edu, spe@gmail.com, dd@gmail.com
+name
+email@email.com
+pass
+230324
+2023/02/11 12:23 Someeven
+Do something
+Friend1, Friend2
+

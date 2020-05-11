@@ -15,7 +15,7 @@ public class Events {
         this.eventDate = eventDat;
     }
 
-//    All the getters and setters
+    // All the getter and setter methods
     public String getEvent() {
         return event;
     }
@@ -32,7 +32,10 @@ public class Events {
         this.eventDate = eventDat;
     }
 
-    //Method to check if the day for this instance(e1) is before the other(e2)
+    /* Method to check if the day for this instance(e1) is before the other(e2)
+     * @param e2 of type events.
+     * @rturn boolean (true or false)
+     */
     public boolean before(Events e2){
 
         Calendar e1Date = this.eventDate;
@@ -41,7 +44,11 @@ public class Events {
         return e1Date.before(e2Date);
     }
 
-    //Method to change the calender attribute to string so we can print them or write them to file
+    /* Method to change the calender attribute to string so we can print them or write them to file
+     * @param no parameters taken
+     * It prints out the date.
+     * @return empty string
+     */
     public String toString(){
         //Formatted this way to make parsing them easier when reading them from file
         SimpleDateFormat format1 = new SimpleDateFormat("yyyy/MM/dd hh:mm");
